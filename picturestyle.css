@@ -1,0 +1,256 @@
+
+/* FULL PAGE CSS + NAVBAR*/
+
+    html, body {
+        
+        font-family: "Roboto", sans-serif;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    header {
+        position: absolute;
+        max-width: 100%;
+        padding-top: 1.0vw;
+        padding-bottom: 2.0vw;
+        text-transform: uppercase;
+        color: white;
+        z-index: 1;
+        
+    }
+
+    .header-title h1 {
+        margin: auto;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 4.5em;
+        text-align: center;
+        
+        }
+
+
+    nav {
+        margin-top: 0.2vw;
+        margin-bottom: 0;
+        
+    }
+
+
+    .nav-menu-items {
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 1.6em;
+        font-size: .8em;
+        letter-spacing: 0.1em;
+        
+        
+    }
+
+    @media screen and (viewport-width:950px) {
+        .nav-menu-items {
+            line-height: 1.8em;
+            font-size: 1.0em;
+        }
+    }
+    @media screen and (max-width:950px) {
+        .nav-menu-items {
+            line-height: 1.8em;
+            font-size: 1.0em;
+        }
+    }
+
+
+    .nav-menu-items a{
+        text-decoration: none;
+        color: white;
+        text-decoration: underline solid rgba(255, 255, 255, 0) 0.1em;
+        text-underline-offset: 0.15em;
+        transition: 0.3s;
+    }
+
+    .nav-menu-items li {
+        
+        list-style-type: none;
+            
+    }
+
+    .nav-menu-items li a{
+        
+        padding: 2px;
+        margin: 5px;
+        font-weight: 500;
+                
+    }
+
+
+    #current_page {
+        color: rgb(238, 238, 238);
+        text-decoration: underline solid rgb(238, 238, 238) 0.1em;
+        text-underline-offset: 0.4em;
+    }
+
+
+    a:hover {
+        color: rgb(238, 238, 238, 1);
+        text-decoration: underline solid rgb(238, 238, 238, 1) 0.1em;
+        text-underline-offset: 0.4em;
+        
+    }
+
+    #current_page:hover{
+        color: rgb(238, 238, 238);
+    }
+
+
+
+/* MAIN BODY CSS */
+
+
+    .bg {
+        display: flex;
+        flex-direction: column;
+        background-image: url(IMG/backgroundsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        min-height: 100%;
+        width: 100%;
+        
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8em;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 2.0em;
+    }
+
+        .welcomemessage {
+            width: 70%;
+        }
+
+        .button {
+            height: 40px;
+            width: 120px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            background-color: white;
+            transition-duration: 0.4s;
+
+            font-size: 0.5em;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.08em;
+            
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgba(53, 53, 53, 0.7);
+    }
+
+    .section1 {     
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+        .section1_content {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            
+        }
+
+        .picture {
+            float: left;
+            padding: 20px;
+        }
+
+        .section1_content p {
+            padding: 20px;
+            
+        }
+
+    .section2 {
+        min-height: 70vh;
+        width: 100%;
+        background-color: rgb(110, 171, 187);
+    }
+
+        .section2_content {
+            padding: 20px;
+            color: white;
+        }
+
+    .section3 {
+        min-height: 100px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+        .section3_content {
+            padding: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+
+/* INDEX PAGE CSS */
+
+
+
+/* FOOTER CSS */
+
+    footer {
+        
+        
+        margin-top: 2.5vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        font-weight: 500;
+        line-height: 1.6em;
+        font-size: .8em;
+        letter-spacing: 0.12em;
+
+
+        justify-content: center;
+        list-style-type: none;
+        
+        padding: 0 15vw;
+        border-top: 1px solid  black;
+
+    }
+
+    .footer_links li {
+        padding: 5px;
+        margin: 3px;
+    }
+
+
+
