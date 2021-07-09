@@ -137,9 +137,8 @@
             hsla(0, 0%, 0%, 0.016) 77.1%,
             hsla(0, 0%, 0%, 0.007) 84.6%,
             hsla(0, 0%, 0%, 0.002) 92.3%,
-            hsla(0, 0%, 0%, 0) 100%), url(IMG/backgroundsplash.jpg);
+            hsla(0, 0%, 0%, 0) 100%), url(IMG/ifranjpg-compressed.jpg);
             
-        /*background-image: url(IMG/backgroundsplash.jpg);*/
         /*background: linear-gradient(0deg, rgb(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.15) 100%), url(IMG/backgroundsplash.jpg);*/
 
         background-position: center;
