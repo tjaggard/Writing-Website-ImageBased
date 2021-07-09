@@ -118,8 +118,30 @@
     .bg {
         display: flex;
         flex-direction: column;
+        
+        /*https://larsenwork.com/easing-gradients/*/
+        background:        
+            linear-gradient(to bottom,
+            hsla(0, 0%, 0%, 0.45) 0%,
+            hsla(0, 0%, 0%, 0.388) 5.3%,
+            hsla(0, 0%, 0%, 0.331) 10.9%,
+            hsla(0, 0%, 0%, 0.279) 16.6%,
+            hsla(0, 0%, 0%, 0.232) 22.6%,
+            hsla(0, 0%, 0%, 0.189) 28.8%,
+            hsla(0, 0%, 0%, 0.152) 35.2%,
+            hsla(0, 0%, 0%, 0.118) 41.8%,
+            hsla(0, 0%, 0%, 0.09) 48.5%,
+            hsla(0, 0%, 0%, 0.065) 55.4%,
+            hsla(0, 0%, 0%, 0.045) 62.5%,
+            hsla(0, 0%, 0%, 0.028) 69.7%,
+            hsla(0, 0%, 0%, 0.016) 77.1%,
+            hsla(0, 0%, 0%, 0.007) 84.6%,
+            hsla(0, 0%, 0%, 0.002) 92.3%,
+            hsla(0, 0%, 0%, 0) 100%), url(IMG/backgroundsplash.jpg);
+            
         /*background-image: url(IMG/backgroundsplash.jpg);*/
-        background: linear-gradient(0deg, rgb(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.15) 100%), url(IMG/backgroundsplash.jpg);
+        /*background: linear-gradient(0deg, rgb(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.15) 100%), url(IMG/backgroundsplash.jpg);*/
+
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
