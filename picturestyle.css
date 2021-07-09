@@ -85,8 +85,8 @@
 
     .nav-menu-items li a{
         
-        padding: 2px;
-        margin: 5px;
+        padding: 5px;
+        margin: 2px;
         font-weight: 500;
                 
     }
@@ -200,11 +200,32 @@
 
         .section1_content {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            
+        }
+
+        .section1_header {
+            width: 90%;
+            font-weight: 100;
+            font-style: italic;
+            font-size: 1.2em;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+
+        .section1_row {
+            display: flex;
             flex-direction: row;
             align-items: center;
             height: 100%;
-            
         }
+
 
         .picture {
             float: left;
@@ -216,13 +237,13 @@
             
         }
 
-        @media screen and (viewport-width:700px) {
-            .section1_content {
+        @media screen and (viewport-width:750px) {
+            .section1_row {
                 flex-direction: column;
             }
         }
-        @media screen and (max-width:700px) {
-            .section1_content {
+        @media screen and (max-width:750px) {
+            .section1_row {
                 flex-direction: column;
             }
         }
@@ -255,6 +276,7 @@
 
         .section2_links {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -266,14 +288,33 @@
         }
 
         .section2_link {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
+            width: 20vw;
+            height: 20vw;
+            margin: 0.9vw;
             background-color: white;
             color: black;
             text-align: center;
         }
 
+        @media screen and (viewport-width:750px) {
+            .section2_link {
+                width: 35vw;
+                height: 35vw;
+                margin: 1.5vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        @media screen and (max-width:750px) {
+            .section2_link {
+                width: 35vw;
+                height: 35vw;
+                margin: 1.5vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+       
 
 
     .section3 {
