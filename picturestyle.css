@@ -1,8 +1,8 @@
 
-/* FULL PAGE CSS + NAVBAR*/
+/* FULL PAGE*/
+
 
     html, body {
-        
         font-family: "Roboto", sans-serif;
         width: 100%;
         margin: 0;
@@ -11,8 +11,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
+
+/* HEADER NAVBAR*/
 
     header {
         position: absolute;
@@ -22,7 +23,6 @@
         text-transform: uppercase;
         color: white;
         z-index: 1;
-        
     }
 
     .header-title h1 {
@@ -31,28 +31,21 @@
         font-style: italic;
         font-size: 4.5em;
         text-align: center;
-        
-        }
-
+    }
 
     nav {
         margin-top: 0.2vw;
         margin-bottom: 0;
-        
     }
 
-
     .nav-menu-items {
-        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         line-height: 1.6em;
         font-size: .8em;
-        letter-spacing: 0.1em;
-        
-        
+        letter-spacing: 0.1em;     
     }
 
     @media screen and (viewport-width:950px) {
@@ -78,17 +71,13 @@
     }
 
     .nav-menu-items li {
-        
         list-style-type: none;
-            
     }
 
     .nav-menu-items li a{
-        
         padding: 5px;
         margin: 2px;
         font-weight: 500;
-                
     }
 
 
@@ -103,7 +92,6 @@
         color: rgb(238, 238, 238, 1);
         text-decoration: underline solid rgb(238, 238, 238, 1) 0.1em;
         text-underline-offset: 0.4em;
-        
     }
 
     #current_page:hover{
@@ -112,260 +100,239 @@
 
 
 
-/* MAIN BODY CSS */
-
-
-    .bg {
-        display: flex;
-        flex-direction: column;
-        
-        /*https://larsenwork.com/easing-gradients/*/
-        background:        
-            linear-gradient(to bottom,
-            hsla(0, 0%, 0%, 0.45) 0%,
-            hsla(0, 0%, 0%, 0.388) 5.3%,
-            hsla(0, 0%, 0%, 0.331) 10.9%,
-            hsla(0, 0%, 0%, 0.279) 16.6%,
-            hsla(0, 0%, 0%, 0.232) 22.6%,
-            hsla(0, 0%, 0%, 0.189) 28.8%,
-            hsla(0, 0%, 0%, 0.152) 35.2%,
-            hsla(0, 0%, 0%, 0.118) 41.8%,
-            hsla(0, 0%, 0%, 0.09) 48.5%,
-            hsla(0, 0%, 0%, 0.065) 55.4%,
-            hsla(0, 0%, 0%, 0.045) 62.5%,
-            hsla(0, 0%, 0%, 0.028) 69.7%,
-            hsla(0, 0%, 0%, 0.016) 77.1%,
-            hsla(0, 0%, 0%, 0.007) 84.6%,
-            hsla(0, 0%, 0%, 0.002) 92.3%,
-            hsla(0, 0%, 0%, 0) 100%), url(IMG/ifranjpg-compressed.jpg);
-            
-        /*background: linear-gradient(0deg, rgb(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.15) 100%), url(IMG/backgroundsplash.jpg);*/
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        
-        min-height: 100%;
-        width: 100%;
-        
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 0;
-        overflow: hidden;
-
-        justify-content: center;
-        align-items: center;
-
-        
-    }
-
-        .welcomemessage {
-            width: 70%;
-            text-align: center;
-            color: white;
-            font-family: "Roboto", sans-serif;
-            font-weight: 100;
-            font-style: italic;
-            font-size: 3.0em;
-        }
-
-        .button {
-            height: 40px;
-            width: 120px;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            background-color: white;
-            transition-duration: 0.4s;
-
-            font-size: 0.85em;
-            font-family: "Roboto", sans-serif;
-            letter-spacing: 0.08em;
-            
-        }
-
-        .button:hover {
-            background-color: rgba(255, 255, 255, 0.8);
-            color: rgba(53, 53, 53, 0.6);
-    }
-
-    .section1 {     
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        
-    }
-
-        .section1_content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            width: 90%;
-            margin: auto;
-            
-        }
-
-        .section1_header {
-            width: 90%;
-            font-weight: 100;
-            font-style: italic;
-            font-size: 1.2em;
-            text-align: left;
-            margin-top: 20px;
-        }
-
-
-        .section1_row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 100%;
-        }
-
-
-        .picture {
-            float: left;
-            padding: 20px;
-        }
-
-        .section1_content p {
-            padding: 0px 20px;
-            
-        }
-
-        @media screen and (viewport-width:750px) {
-            .section1_row {
-                flex-direction: column;
-            }
-        }
-        @media screen and (max-width:750px) {
-            .section1_row {
-                flex-direction: column;
-            }
-        }
-
-
-
-    .section2 {
-        /*min-height: 40vh;*/
-        width: 100%;
-        background-color: rgb(110, 171, 187);
-    }
-
-        .section2_content {
-            display: flex;
-            flex-direction: column;
-            color: white;
-            width: 90%;
-            height: 100%;
-            margin: auto;
-        }
-
-        .section2_header {
-            font-weight: 100;
-            font-style: italic;
-            font-size: 1.2em;
-            text-align: left;
-            margin-left: 50px;
-            margin-top: 20px;
-        }
-
-        .section2_links {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            margin: auto;
-            margin-bottom: 25px;
-            margin-top: 0px;
-        }
-
-        .section2_link {
-            width: 20vw;
-            height: 20vw;
-            margin: 0.9vw;
-            background-color: white;
-            color: black;
-            text-align: center;
-        }
-
-        @media screen and (viewport-width:750px) {
-            .section2_link {
-                width: 35vw;
-                height: 35vw;
-                margin: 1.5vw;
-                margin-bottom: 3vw;
-            }
-        }
-
-        @media screen and (max-width:750px) {
-            .section2_link {
-                width: 35vw;
-                height: 35vw;
-                margin: 1.5vw;
-                margin-bottom: 3vw;
-            }
-        }
-
-       
-
-
-    .section3 {
-        min-height: 100px;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-    }
-
-        .section3_content {
-            padding: 20px;
-            color: rgb(0, 0, 0);
-        }
-
-
 /* INDEX PAGE CSS */
 
+    /* Full height splashcreen */
+
+        .bg {
+            display: flex;
+            flex-direction: column;
+            
+            /*https://larsenwork.com/easing-gradients/*/
+            background:        
+                linear-gradient(to bottom,
+                hsla(0, 0%, 0%, 0.45) 0%,
+                hsla(0, 0%, 0%, 0.388) 5.3%,
+                hsla(0, 0%, 0%, 0.331) 10.9%,
+                hsla(0, 0%, 0%, 0.279) 16.6%,
+                hsla(0, 0%, 0%, 0.232) 22.6%,
+                hsla(0, 0%, 0%, 0.189) 28.8%,
+                hsla(0, 0%, 0%, 0.152) 35.2%,
+                hsla(0, 0%, 0%, 0.118) 41.8%,
+                hsla(0, 0%, 0%, 0.09) 48.5%,
+                hsla(0, 0%, 0%, 0.065) 55.4%,
+                hsla(0, 0%, 0%, 0.045) 62.5%,
+                hsla(0, 0%, 0%, 0.028) 69.7%,
+                hsla(0, 0%, 0%, 0.016) 77.1%,
+                hsla(0, 0%, 0%, 0.007) 84.6%,
+                hsla(0, 0%, 0%, 0.002) 92.3%,
+                hsla(0, 0%, 0%, 0) 100%), url(IMG/ifranjpg-compressed.jpg);
+                
+            /*background: linear-gradient(0deg, rgb(255, 255, 255, 0.0) 10%, rgba(0, 0, 0, 0.15) 100%), url(IMG/backgroundsplash.jpg);*/
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            min-height: 100%;
+            width: 100%;
+            
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+
+            .welcomemessage {
+                width: 70%;
+                text-align: center;
+                color: white;
+                font-weight: 100;
+                font-style: italic;
+                font-size: 3.0em;
+            }
+
+            .button {
+                height: 40px;
+                width: 120px;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                background-color: white;
+                transition-duration: 0.5s;
+
+                font-size: 0.85em;
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.08em;
+                
+            }
+
+            .button:hover {
+                background-color: rgba(255, 255, 255, 0.7);
+                color: rgba(53, 53, 53, 0.6);
+        }
+
+    /* About Section */
+
+        .section1 {     
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+
+            .section1_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 90%;
+                margin: auto;
+                
+            }
+
+            .section1_header {
+                width: 90%;
+                font-weight: 100;
+                font-style: italic;
+                font-size: 1.2em;
+                text-align: left;
+                margin-top: 20px;
+            }
 
 
-/* FOOTER CSS */
-
-    footer {
-        
-        
-        margin-top: 2.5vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footer_links {
-        display: flex;
-        flex-direction: row;
-        font-weight: 500;
-        line-height: 1.6em;
-        font-size: .8em;
-        letter-spacing: 0.12em;
+            .section1_row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 100%;
+            }
 
 
-        justify-content: center;
-        list-style-type: none;
-        
-        padding: 0 15vw;
-        border-top: 1px solid  black;
+            .picture {
+                float: left;
+                padding: 20px;
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
 
-    }
+            .section1_content p {
+                padding: 0px 20px;
+                
+            }
 
-    .footer_links li {
-        padding: 5px;
-        margin: 3px;
-    }
+            @media screen and (viewport-width:750px) {
+                .section1_row {
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width:750px) {
+                .section1_row {
+                    flex-direction: column;
+                }
+            }
 
+    /* Featured Articles Section */
+
+        .section2 {
+            width: 100%;
+            background-color: rgb(110, 171, 187);
+        }
+
+            .section2_content {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                width: 90%;
+                height: 100%;
+                margin: auto;
+            }
+
+            .section2_header {
+                font-weight: 100;
+                font-style: italic;
+                font-size: 1.2em;
+                text-align: left;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+
+            .section2_links {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 25px;
+                margin-top: 0px;
+            }
+
+            .section2_link {
+                width: 20vw;
+                height: 20vw;
+                margin: 0.9vw;
+                background-color: white;
+                color: black;
+                text-align: center;
+            }
+
+            @media screen and (viewport-width:750px) {
+                .section2_link {
+                    width: 35vw;
+                    height: 35vw;
+                    margin: 1.5vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            @media screen and (max-width:750px) {
+                .section2_link {
+                    width: 35vw;
+                    height: 35vw;
+                    margin: 1.5vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+       
+    /* Footer */
+
+        .section3 {
+            
+            min-height: 150px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+        }
+
+            .section3_content {
+                width: 80%;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer_text p{
+                text-align: center;
+                font-size: 0.8em;
+                margin: 4px 0;
+            }
+
+
+/* RECORDINGS PAGE CSS */
+
+    
 
 
