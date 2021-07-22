@@ -369,9 +369,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 70%;
-        width: 50%;
+        min-height: 60%;
+        width: 45%;
         margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
         background-color: lightslategray;
         border-radius: 5px;
 
@@ -380,40 +382,38 @@
 
     @media screen and (viewport-width:900px) {
         .contact-form {
-            width: 80%;
+            width: 70%;
         }
     }
 
     @media screen and (max-width:900px) {
         .contact-form {
-            width: 80%;
+            width: 70%;
         }
     }
-
-
 
     .contact-form h1 {
         font-weight: 100;
         font-style: italic;
-        font-size: 3.5em;
+        font-size: 3.0em;
         color:white;
-        margin-bottom: 10%;
+        margin-bottom: 2%;
     }
 
     .contact-form label {
         margin: 5px;
         padding: 5px;
+        padding-top: 20px;
         color:white;
         width: 90%;
-
-        
+        font-size: 1.2em;
     }
-
 
     input {
         width: 90%;
         padding: 5px;
         margin: 15px;
+        margin-top: 5px;
         border-radius: 3px;
         border: none;
         background-color: transparent;
@@ -428,8 +428,6 @@
     input:focus {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8);
     }
-
-
 
     .contact-form textarea {
         width: 90%;
@@ -452,9 +450,11 @@
     }
    
     #message {
-        margin-bottom: 35px;
-        height: 150px;
         
+        height: 150px;
     }
 
+    .contact-form button {
+        margin: 10px;
+    }
 
