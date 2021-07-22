@@ -4,6 +4,7 @@
 
     html, body {
         font-family: "Roboto", sans-serif;
+        
         width: 100%;
         margin: 0;
         padding: 0;
@@ -11,8 +12,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: grey;
+        /*background-color: grey;*/
     }
+
+
+
 
 /* HEADER NAVBAR*/
 
@@ -325,7 +329,7 @@
 
         .section3 {
             
-            min-height: 150px;
+            min-height: 50px;
             width: 100%;
             background-color: rgb(255, 255, 255);
             display: flex;
@@ -352,23 +356,64 @@
     .contact-container {
         display: flex;
         flex-direction: column;
-        min-height: 60vh;
         width: 100%;
+        height: 100%;
         align-items: center;
         justify-content: center;
+        margin-top: 0;
     }
-    
-    .contact-message {
-        margin:auto;
-        width: 70%;
-        text-align: center;
-        color: white;
+ 
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 70%;
+        width: 50%;
+        margin: auto;
+        background-color: lightslategray;
+    }
+
+    .contact-form h1 {
         font-weight: 100;
         font-style: italic;
-        font-size: 2.5em;
+        font-size: 3.5em;
+        color:white;
+        margin-bottom: 10%;
+    }
+
+    .contact-form label {
+        margin: 5px;
+        padding: 5px;
+        color:white;
     }
 
 
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+        border: none;
+        
+        font-family: "Roboto", sans-serif;
+    }
 
+    .contact-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.9em;
+        resize: vertical;
+    }
+
+    
+    #message {
+        margin-bottom: 35px;
+        height: 150px;
+        
+    }
 
 
