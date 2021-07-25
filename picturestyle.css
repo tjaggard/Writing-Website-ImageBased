@@ -1,4 +1,9 @@
 
+/* COLOURS */
+
+    /* Main red theme: rgb(255, 98, 111, 1) */
+
+
 /* FULL PAGE*/
 
 
@@ -39,7 +44,7 @@
         padding-bottom: 2.0vw;
         text-transform: uppercase;
         color: white;
-        background-color: lightslategray;
+        background-color: rgb(255, 98, 111, 1);
         z-index: 0;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -88,7 +93,7 @@
         color: white;
         text-decoration: underline solid rgba(255, 255, 255, 0) 0.1em;
         text-underline-offset: 0.15em;
-        transition: 0.3s;
+        transition: 0.4s;
     }
 
     .nav-menu-items li {
@@ -104,14 +109,14 @@
 
     #current_page {
         color: rgb(238, 238, 238);
-        text-decoration: underline solid rgb(238, 238, 238) 0.1em;
+        text-decoration: underline solid rgb(255, 98, 111, 1) 0.15em;
         text-underline-offset: 0.4em;
     }
 
 
     a:hover {
         color: rgb(238, 238, 238, 1);
-        text-decoration: underline solid rgb(238, 238, 238, 1) 0.1em;
+        text-decoration: underline solid rgb(255, 98, 111, 1) 0.15em;
         text-underline-offset: 0.4em;
     }
 
@@ -177,12 +182,12 @@
                 color: white;
                 font-weight: 100;
                 font-style: italic;
-                font-size: 3.0em;
+                font-size: 3.5em;
             }
 
             .button {
-                height: 40px;
-                width: 120px;
+                height: 50px;
+                width: 150px;
                 border: none;
                 text-align: center;
                 text-decoration: none;
@@ -228,6 +233,10 @@
                 margin-top: 20px;
             }
 
+            .section1_header h1 {
+                font-weight: 100;
+                font-style: italic;
+            }
 
             .section1_row {
                 display: flex;
@@ -264,7 +273,7 @@
 
         .section2 {
             width: 100%;
-            background-color: rgb(110, 171, 187);
+            background-color: rgb(255, 112, 124);
         }
 
             .section2_content {
@@ -285,27 +294,38 @@
                 margin-top: 20px;
             }
 
+            .section2_header h1 {
+                font-weight: 100;
+                font-style: italic;
+            }
+
             .section2_links {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 height: 100%;
                 width: 100%;
                 margin: auto;
                 margin-bottom: 25px;
-                margin-top: 0px;
+                margin-top: 25px;
             }
 
             .section2_link {
-                width: 20vw;
-                height: 20vw;
+                width: 26vw;
                 margin: 0.9vw;
-                background-color: white;
-                color: black;
+                
+                color: white;
                 text-align: center;
+                padding: 0.5vw;
             }
+
+            .section2_link img {
+                width: 24vw;
+                height: 24vw;
+            }
+
 
             @media screen and (viewport-width:750px) {
                 .section2_link {
@@ -325,16 +345,32 @@
                 }
             }
 
+
+            .section2_all_episodes {
+                padding: 15px;
+                margin-bottom: 25px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+
+            .section2_all_episodes a {
+                text-decoration: none;
+                color: white;
+            }
+
        
     /* Footer */
 
         .section3 {
             
-            min-height: 50px;
+            min-height: 75px;
             width: 100%;
             background-color: rgb(255, 255, 255);
             display: flex;
         }
+
+        
 
             .section3_content {
                 width: 80%;
@@ -374,7 +410,7 @@
         margin: auto;
         margin-top: 2%;
         margin-bottom: 2%;
-        background-color: lightslategray;
+        background-color: rgb(255, 98, 111, 1);
         border-radius: 5px;
 
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -395,7 +431,7 @@
     }
 
     .contact-form h1 {
-        font-weight: 100;
+        font-weight: 300;
         font-style: italic;
         font-size: 3.0em;
         color:white;
