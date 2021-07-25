@@ -226,8 +226,6 @@
 
             .section1_header {
                 width: 90%;
-                font-weight: 100;
-                font-style: italic;
                 font-size: 1.2em;
                 text-align: left;
                 margin-top: 20px;
@@ -235,7 +233,6 @@
 
             .section1_header h1 {
                 font-weight: 100;
-                font-style: italic;
             }
 
             .section1_row {
@@ -273,7 +270,8 @@
 
         .section2 {
             width: 100%;
-            background-color: rgb(255, 112, 124);
+            background-color: rgb(255, 98, 111, 1) ;
+            
         }
 
             .section2_content {
@@ -286,8 +284,6 @@
             }
 
             .section2_header {
-                font-weight: 100;
-                font-style: italic;
                 font-size: 1.2em;
                 text-align: left;
                 margin-left: 50px;
@@ -296,7 +292,6 @@
 
             .section2_header h1 {
                 font-weight: 100;
-                font-style: italic;
             }
 
             .section2_links {
@@ -309,13 +304,16 @@
                 width: 100%;
                 margin: auto;
                 margin-bottom: 25px;
-                margin-top: 25px;
+                margin-top: 0px;
             }
 
             .section2_link {
+                display: flex;
+                flex-direction: column;
                 width: 26vw;
                 margin: 0.9vw;
-                
+                margin-bottom: 0px;
+                padding-bottom: 0px;
                 color: white;
                 text-align: center;
                 padding: 0.5vw;
@@ -325,38 +323,73 @@
                 width: 24vw;
                 height: 24vw;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
                 transition: box-shadow 0.4s;
             }
 
             .section2_link img:hover {
-                width: 24vw;
-                height: 24vw;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
+
+            .section2_link_title {
+                margin-top: 15px;
+            }
+
+            .section2_link_title a {
+                margin-bottom: 5px;
+                font-weight: 400;
+                line-height: 1.5rem;
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: white;
+            }
+
+            .section2_link_date {
+                font-size: 0.8em;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+                font-style: italic;
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .section2_link_date p {
+                margin: 0px;
+            }
+
+            .section2_link_description {
+                line-height: 1.4em;
+                font-size: 0.95rem;
             }
 
             @media screen and (viewport-width:750px) {
                 .section2_link {
-                    width: 35vw;
-                    height: 35vw;
+                    width: 70vw;
                     margin: 1.5vw;
                     margin-bottom: 3vw;
+                }
+
+                .section2_link img {
+                    width: 50vw;
+                    height: 50vw;
                 }
             }
 
             @media screen and (max-width:750px) {
                 .section2_link {
-                    width: 35vw;
-                    height: 35vw;
+                    width: 70vw;
                     margin: 1.5vw;
                     margin-bottom: 3vw;
+                }
+
+                .section2_link img {
+                    width: 50vw;
+                    height: 50vw;
                 }
             }
 
 
             .section2_all_episodes {
-                padding: 15px;
-                margin-bottom: 25px;
+                
+                margin-bottom: 35px;
                 align-items: center;
                 justify-content: center;
                 display: flex;
@@ -439,9 +472,8 @@
     }
 
     .contact-form h1 {
-        font-weight: 300;
-        font-style: italic;
-        font-size: 3.0em;
+        font-weight: 100;
+        font-size: 2.5rem;
         color:white;
         margin-bottom: 2%;
     }
