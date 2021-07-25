@@ -178,12 +178,26 @@
 
             .welcomemessage {
                 width: 70%;
+                margin-top: 5vw;
                 text-align: center;
                 color: white;
                 font-weight: 100;
                 font-style: italic;
-                font-size: 3.5em;
+                font-size: 3.0em;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
             }
+
+            @media screen and (viewport-width:750px) {
+                .welcomemessage {
+                    margin-top: 30vw;
+                }
+            }
+            @media screen and (max-width:750px) {
+                .welcomemessage {
+                    margin-top: 30vw;
+                }
+            }
+
 
             .button {
                 height: 50px;
