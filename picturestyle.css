@@ -324,8 +324,16 @@
             .section2_link img {
                 width: 24vw;
                 height: 24vw;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+                transition: box-shadow 0.4s;
             }
 
+            .section2_link img:hover {
+                width: 24vw;
+                height: 24vw;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
 
             @media screen and (viewport-width:750px) {
                 .section2_link {
