@@ -277,6 +277,7 @@
             .section2_content {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 color: white;
                 width: 90%;
                 height: 100%;
@@ -284,9 +285,10 @@
             }
 
             .section2_header {
+                width: 90%;
                 font-size: 1.2em;
                 text-align: left;
-                margin-left: 50px;
+                
                 margin-top: 20px;
             }
 
@@ -371,6 +373,7 @@
                     width: 50vw;
                     height: 50vw;
                 }
+               
             }
 
             @media screen and (max-width:750px) {
@@ -384,6 +387,7 @@
                     width: 50vw;
                     height: 50vw;
                 }
+                
             }
 
 
