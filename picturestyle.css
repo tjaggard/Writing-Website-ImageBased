@@ -67,6 +67,7 @@
 
     nav {
         padding-right: 5vw;
+        padding-left: 5vw;
     }
 
     .nav-menu-items {
@@ -200,6 +201,7 @@
 
 
             .button {
+                
                 height: 50px;
                 width: 150px;
                 border: none;
@@ -215,8 +217,11 @@
             }
 
             .button a {
+                display: block;
                 text-decoration: none;
                 color: black;
+                padding: 15px;
+                
             }
 
             .button:hover {
@@ -576,9 +581,14 @@
         font-family: Merriweather;
     }
 
+    .articles-summary-img {
+        
+    }
+
     .articles-summary-img img{
+        object-fit: cover;
         width: 100%;
-        height: 100%;
+        max-height: 350px;
     }
 
     .articles-summary-title h2 {
@@ -609,11 +619,12 @@
         border-bottom: 1px solid rgb(255, 98, 111, 1);
         color: rgb(255, 98, 111, 1);
         padding: 5px 5px 5px 0px;
+        transition: 0.2s;
         
     }
 
     .articles-summary-readlink a:hover{
-        border-bottom: 1px solid rgb(255, 98, 111, 0.7);
+        border-bottom: 1px solid rgb(255, 98, 111, 0.5);
         color: rgb(255, 98, 111, 0.7);
     }
 
