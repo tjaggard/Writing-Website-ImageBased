@@ -6,7 +6,6 @@
 
 /* FULL PAGE*/
 
-
     html, body {
         font-family: "Roboto", sans-serif;
         
@@ -19,8 +18,6 @@
         align-items: center;
         /*background-color: grey;*/
     }
-
-
 
 
 /* HEADER NAVBAR*/
@@ -37,11 +34,12 @@
 
     .relative-header { /* Adjustments for header to make z-index not 1 */
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
         position: relative;
         max-width: 100%;
-        padding-top: 1.0vw;
-        padding-bottom: 2.0vw;
+        padding: 15px 0px 15px 0px;
         text-transform: uppercase;
         color: white;
         background-color: rgb(255, 98, 111, 1);
@@ -49,7 +47,6 @@
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
-
 
     .header-title h1 {
         margin: auto;
@@ -59,9 +56,17 @@
         text-align: center;
     }
 
+    .header-title-row h1 {
+        margin: auto;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 2.5em;
+        text-align: center;
+        padding-left: 5vw;
+    }
+
     nav {
-        margin-top: 0.2vw;
-        margin-bottom: 0;
+        padding-right: 5vw;
     }
 
     .nav-menu-items {
@@ -76,14 +81,14 @@
 
     @media screen and (viewport-width:950px) {
         .nav-menu-items {
-            line-height: 1.8em;
-            font-size: 1.0em;
+            line-height: 1.7em;
+            font-size: 0.9em;
         }
     }
     @media screen and (max-width:950px) {
         .nav-menu-items {
-            line-height: 1.8em;
-            font-size: 1.0em;
+            line-height: 1.7em;
+            font-size: 0.9em;
         }
     }
 
@@ -101,7 +106,7 @@
     }
 
     .nav-menu-items li a{
-        padding: 5px;
+        padding: 7px;
         margin: 2px;
         font-weight: 500;
     }
@@ -109,19 +114,14 @@
 
     #current_page {
         color: rgb(238, 238, 238);
-        text-decoration: underline solid rgb(255, 98, 111, 1) 0.15em;
-        text-underline-offset: 0.4em;
+        text-decoration: underline solid rgba(255, 255, 255, 0.8) 0.12em;
+        text-underline-offset: 0.45em;
     }
-
 
     a:hover {
         color: rgb(238, 238, 238, 1);
-        text-decoration: underline solid rgb(255, 98, 111, 1) 0.15em;
-        text-underline-offset: 0.4em;
-    }
-
-    #current_page:hover{
-        color: rgb(238, 238, 238);
+        text-decoration: underline solid rgba(255, 255, 255, 0.8) 0.12em;
+        text-underline-offset: 0.45em;
     }
 
 
@@ -265,8 +265,8 @@
             }
 
             .section1_content p {
-                padding: 0px 20px;
-                
+                padding: 0px 50px;
+                text-align: center;
             }
 
             @media screen and (viewport-width:750px) {
@@ -442,7 +442,7 @@
 
             .footer_text p{
                 text-align: center;
-                font-size: 0.8em;
+                font-size: 0.7em;
                 margin: 4px 0;
             }
 
@@ -554,3 +554,56 @@
         margin: 10px;
     }
 
+/* ARTICLES SUMMARY PAGE CSS */
+
+
+
+    .articles-container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        grid-auto-rows: min-content;
+        width: 90%;
+        
+        
+        padding-top: 6vh;
+        padding-bottom: 4vh;
+        
+
+    }
+
+    .articles-summary-box {
+        
+    }
+
+    .articles-summary-box {
+        font-family: Merriweather;
+    }
+
+    .articles-summary-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .articles-summary-date {
+        font-size: 0.8em;
+    }
+
+    .articles-summary-title {
+
+    }
+
+    .articles-summary-about {
+        font-size: 0.9em;
+    }
+
+    .articles-summary-readlink {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .articles-summary-readlink a{
+        text-decoration: none;
+        color: rgb(255, 98, 111, 1);
+        padding: 100px 0px 0px 0px;
+    }
