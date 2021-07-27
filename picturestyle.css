@@ -214,6 +214,11 @@
                 
             }
 
+            .button a {
+                text-decoration: none;
+                color: black;
+            }
+
             .button:hover {
                 background-color: rgba(255, 255, 255, 0.7);
                 color: rgba(53, 53, 53, 0.6);
@@ -413,11 +418,6 @@
                 display: flex;
             }
 
-            .section2_all_episodes a {
-                text-decoration: none;
-                color: white;
-            }
-
        
     /* Footer */
 
@@ -427,24 +427,22 @@
             width: 100%;
             background-color: rgb(255, 255, 255);
             display: flex;
+        }     
+
+        .section3_content {
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        
-
-            .section3_content {
-                width: 80%;
-                height: 100%;
-                margin: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .footer_text p{
-                text-align: center;
-                font-size: 0.7em;
-                margin: 4px 0;
-            }
+        .footer_text p{
+            text-align: center;
+            font-size: 0.7em;
+            margin: 4px 0;
+        }
 
 
 /* CONTACT PAGE CSS */
